@@ -7,62 +7,121 @@
     <title>DLF Garden City</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 <body>
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-          <span class="fs-4">Simple header</span>
-        </a>
-  
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-        </ul>
-      </header>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <!-- Container wrapper -->
+        <div class="container">
+          <!-- Navbar brand -->
+          <a class="navbar-brand me-2" href="https://mdbgo.com/">
+            <img
+              src="http://mediqpharma.com/wp/wp-content/uploads/elementor/thumbs/1280px-DLF_logo.svg-2-pqfrxyo3zve6vdi9prcup9fosjdsaftmwufce7metu.png"
+              height="56"
+              alt="DLF Logo"
+              loading="lazy"
+              style="margin-top: -1px;"
+            />
+          </a>
       
-      <section id = "main" style = "padding: 0;">
-        <div>
-            <div style = "background: green">
-                <div class = "container border">
+          <!-- Toggle button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarButtonsExample"
+            aria-controls="navbarButtonsExample"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+      
+          <!-- Collapsible wrapper -->
+          <!-- <div class="collapse navbar-collapse" id="navbarButtonsExample">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Dashboard</a>
+              </li>
+            </ul> -->
+            <!-- Left links -->
+      
+            <div class="d-flex align-items-center">
+              <button type="button" class="btn btn-link">
+                About
+              </button>
+              <button type="button" class="btn btn-link">
+                Location
+              </button>
+              <button type="button" class="btn btn-link">
+                Highlights
+              </button>
+              <button type="button" class="btn btn-link">
+                Amenities
+              </button>
+              <button type="button" class="btn btn-link">
+                Gallery
+              </button>
+              <button type="button" class="btn btn-link">
+                Floor Plan
+              </button>
+              <button type="button" class="btn btn-link">
+                Layout
+              </button>
+              <button type="button" class="btn btn-link">
+                Reviews
+              </button>
+              <button type="button" class="btn btn-success btn-lg text-white">
+                Enquire Now
+              </button>
+            </div>
+          </div>
+          <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+      </nav>
+      
+      <section id = "main" style = "padding: 290px 0; position: relative;margin-top: 70px;background: url('./assets/img/main.jpg') no-repeat; background-size: cover;">
+        <div style = "position: absolute; top: 0; right: 0; left: 0; bottom: 0;background: #06752E; opacity: 0.8;"></div>
+        <div style = "position: absolute; top: 0; right: 0; left: 0; bottom: 0;margin: 50px 0;">
+            <div>
+                <div class = "container">
                     <div class = "row">
-                        <div class = "col-lg-7">
-                            <h4>At Prime Location of New Gurugram</h4>
-                            <hr style = "width:20%;">
-                            <h1>DLF Garden City</h1>
+                        <div class = "col-lg-7 text-white">
+                            <h4 class = "mt-2">At Prime Location of New Gurugram</h4>
+                            <hr style = "width:20%;margin: 40px 0">
+                            <h1 style = "font-size: 70px;">DLF Garden City</h1>
                             <h2>3 BHK Luxury Floors</h2>
-                            <h5>With Servant Room</h5>
-                            <hr style = "width:20%;">
+                            <h5 style = "font-size: 16px;">With Servant Room</h5>
+                            <hr style = "width:20%;margin: 20px 0;">
 
-                            <h2>Price Starts @</h2>
-                            <h1>₹ 1.30 Cr*</h1>
+                            <h4>Price Starts @</h4>
+                            <h1 style = "font-size: 70px; font-weight: 700">₹ 1.30 Cr*</h1>
                         </div>
                         <div class = "col-lg-5 d-flex align-items-center justify-content-center py-2">
-                           <div class = "d-flex align-items-center h-100 bg-light">
-                            <div class = "contact-form px-3">
-                                <h1 class = "text-center">COMING SOON</h1>
+                           <div class = "contact-main d-flex pt-3 pb-5" style= "border-radius: 20px;">
+                            <div class = "contact-form px-5">
+                                <h3 class = "text-center">COMING SOON</h3>
                                 <p class = "text-center">3 BHK Floors in DLF Garden City</p>
+                                <hr style="width:100px; margin: 20px auto;" />
                                     <form action="">
                                         <div class = "d-flex my-2">
-                                            <div style = "flex:1">
-                                                <input type="text" class = "w-100" name="" id="">
+                                            <div style = "flex:1;margin-right: 10px">
+                                                <input type="text" class = "w-100" name="" id="" placeholder = "First Name">
                                             </div>
                                             <div style = "flex:1">
-                                                <input type="text" class = "w-100" name="" id="">
+                                                <input type="text" class = "w-100" name="" id="" placeholder = "Last Name">
                                             </div>
                                         </div>
                                         <div class = "my-2">
-                                            <input type="text" class = "w-100" name="" id="">
+                                            <input type="text" class = "w-100" name="" id="" placeholder = "Phone">
                                         </div>
                                         <div class = "my-2">
-                                            <input type="text" class = "w-100" name="" id="">
+                                            <input type="text" class = "w-100" name="" id="" placeholder="Email">
                                         </div>
                                         <div>
-                                            <button type="submit" class = "btn btn-success">Enquire</button>
+                                            <button type="submit" class = "btn btn-success btn-lg">Enquire Now</button>
                                         </div>
                                     </form>
                                </div>
@@ -81,131 +140,136 @@
                     <img src="http://mediqpharma.com/wp/wp-content/uploads/2022/06/dlf-garden-city-builder-floors-1.png" class = "img-fluid" alt="">
                 </div>
                 <div class = "col-lg-6">
-                    <h1>About DLF Garden City</h1>
-                    <h1>Gurugram</h1>
+                    <h1 class = "heading">About DLF Garden City</h1>
+                    <h1 style = "color: #14261C">Gurugram</h1>
                     <hr style = "width: 20%;">
                     <p style = "text-align: justify;">Presenting Independent Floors at DLF Gardencity Enclave, Gurugram. Besides offering an abundance of nature’s delights, DLF Gardencity Enclave is located in close proximity to well planned social and physical infrastructure including business districts, hotels, schools, hospitals, multiplexes, clubs, golf courses and a variety of other leisure and retail options. Seamlessly connected to every business and entertainment center of Gurugram through a rapidly developing network of public transport, highways and roads. Independent Floors at DLF Gardencity Enclave are ideal for corporate honchos and their families to make it their abode.</p>
+                    <button class = "btn btn-success btn-lg px-4" style = "font-size: 18px;">Know More</button>
                 </div>
             </div>
         </div>
       </section>
 
-      <section id = "call us" class = "bg-sucess" style = "background: green">
-        <div class = "container">
-            <div class = "row">
-                <div class = "d-flex justify-content-center align-items-center col-lg-6">
-                    <div>
-                        <h1>Call Us Today for FREE Consultations</h1>
-                    <p>A limited opportunity to own Imperial Residences in the heart of Gurugram</p>
+      <section id = "call us" style = "padding: 50px 0;">
+        <div class = "container p-5" style = "background: #06752E; border-radius: 30px;">
+            <div class = "container">
+                <div class = "row">
+                    <div class = "d-flex justify-content-center align-items-center col-lg-8">
+                        <div>
+                            <h3 class = "text-white">Call Us Today for FREE Consultations</h3>
+                            <p class = "mt-3" style = "color: #ddd">A limited opportunity to own Imperial Residences in the heart of Gurugram</p>
+                        </div>
+                    </div>
+                    <div class = "d-flex justify-content-center align-items-center col-lg-4">
+                        <button class = "btn btn-success btn-lg">Call +91-8130635637</button>
                     </div>
                 </div>
-                <div class = "d-flex justify-content-center align-items-center col-lg-6">
-                    <button class = "btn btn-success">Call +91 xxxxxxxxx</button>
-                </div>
             </div>
         </div>
       </section>
 
-      <section id = "Amenities">
+      <section id = "Amenities" style = "padding-bottom: 0;">
         <div class = "container">
             <div class = "text-center">
-                <h1>DLF GARDEN CITY <span style = "color: green">AMENITIES</span></h1>
+                <h1 class = "heading">DLF GARDEN CITY <span class = "highlight">AMENITIES</span></h1>
+                <hr style= "width: 10%; margin: 20px auto;">
                 <p>Not just builders make good and luxurious floors. Its the Amenities of DLF Garden City Luxury Floors that make it luxurious.</p>
+                
             </div>
 
-            <div>
+            <div class = "my-5">
                 <div class = "row">
-                    <div class = "col-lg-3 mb-2">
-                        <div class = "border">
+                    <div class = "col-lg-3 mb-3">
+                        <div class = "amenity-item">
                             <div class = "d-flex align-items-center justify-content-center p-3">
                                 <img src="http://mediqpharma.com/wp/wp-content/uploads/2022/06/dlf-new-launch-in-gurguram.png" style = "width: 100px; height: auto;" class = "img-fluid" alt="">
                             </div>
                             <div>
-                                <p class = "text-center">
+                                <p class = "text-center amenities-text">
                                     100% Power Backup
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class = "col-lg-3 mb-2">
-                        <div class = "border">
+                    <div class = "col-lg-3 mb-3">
+                        <div class = "amenity-item">
                             <div class = "d-flex align-items-center justify-content-center p-3">
                                 <img src="http://mediqpharma.com/wp/wp-content/uploads/2022/06/dlf-new-launch-in-gurguram.png" style = "width: 100px; height: auto;" class = "img-fluid" alt="">
                             </div>
                             <div>
-                                <p class = "text-center">
+                                <p class = "text-center amenities-text">
                                     100% Power Backup
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class = "col-lg-3 mb-2">
-                        <div class = "border">
+                    <div class = "col-lg-3 mb-3">
+                        <div class = "amenity-item">
                             <div class = "d-flex align-items-center justify-content-center p-3">
                                 <img src="http://mediqpharma.com/wp/wp-content/uploads/2022/06/dlf-new-launch-in-gurguram.png" style = "width: 100px; height: auto;" class = "img-fluid" alt="">
                             </div>
                             <div>
-                                <p class = "text-center">
+                                <p class = "text-center amenities-text">
                                     100% Power Backup
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class = "col-lg-3 mb-2">
-                        <div class = "border">
+                    <div class = "col-lg-3 mb-3">
+                        <div class = "amenity-item">
                             <div class = "d-flex align-items-center justify-content-center p-3">
                                 <img src="http://mediqpharma.com/wp/wp-content/uploads/2022/06/dlf-new-launch-in-gurguram.png" style = "width: 100px; height: auto;" class = "img-fluid" alt="">
                             </div>
                             <div>
-                                <p class = "text-center">
+                                <p class = "text-center amenities-text">
                                     100% Power Backup
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class = "col-lg-3 mb-2">
-                        <div class = "border">
+                    <div class = "col-lg-3 mb-3">
+                        <div class = "amenity-item">
                             <div class = "d-flex align-items-center justify-content-center p-3">
                                 <img src="http://mediqpharma.com/wp/wp-content/uploads/2022/06/dlf-new-launch-in-gurguram.png" style = "width: 100px; height: auto;" class = "img-fluid" alt="">
                             </div>
                             <div>
-                                <p class = "text-center">
+                                <p class = "text-center amenities-text">
                                     100% Power Backup
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class = "col-lg-3 mb-2">
-                        <div class = "border">
+                    <div class = "col-lg-3 mb-3">
+                        <div class = "amenity-item">
                             <div class = "d-flex align-items-center justify-content-center p-3">
                                 <img src="http://mediqpharma.com/wp/wp-content/uploads/2022/06/dlf-new-launch-in-gurguram.png" style = "width: 100px; height: auto;" class = "img-fluid" alt="">
                             </div>
                             <div>
-                                <p class = "text-center">
+                                <p class = "text-center amenities-text">
                                     100% Power Backup
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class = "col-lg-3 mb-2">
-                        <div class = "border">
+                    <div class = "col-lg-3 mb-3">
+                        <div class = "amenity-item">
                             <div class = "d-flex align-items-center justify-content-center p-3">
                                 <img src="http://mediqpharma.com/wp/wp-content/uploads/2022/06/dlf-new-launch-in-gurguram.png" style = "width: 100px; height: auto;" class = "img-fluid" alt="">
                             </div>
                             <div>
-                                <p class = "text-center">
+                                <p class = "text-center amenities-text">
                                     100% Power Backup
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class = "col-lg-3 mb-2">
-                        <div class = "border">
+                    <div class = "col-lg-3 mb-3">
+                        <div class = "amenity-item">
                             <div class = "d-flex align-items-center justify-content-center p-3">
                                 <img src="http://mediqpharma.com/wp/wp-content/uploads/2022/06/dlf-new-launch-in-gurguram.png" style = "width: 100px; height: auto;" class = "img-fluid" alt="">
                             </div>
                             <div>
-                                <p class = "text-center">
+                                <p class = "text-center amenities-text">
                                     100% Power Backup
                                 </p>
                             </div>
@@ -216,57 +280,60 @@
         </div>
       </section>
 
-      <section id = "call us" class = "bg-sucess" style = "background: green">
-        <div class = "container">
-            <div class = "row">
-                <div class = "d-flex justify-content-center align-items-center col-lg-6">
-                    <div>
-                        <h1>Call Us Today for FREE Consultations</h1>
-                    <p>A limited opportunity to own Imperial Residences in the heart of Gurugram</p>
+      <section id = "call us">
+        <div class = "container p-5" style = "background: #06752E; border-radius: 30px;">
+            <div class = "container">
+                <div class = "row">
+                    <div class = "d-flex justify-content-center align-items-center col-lg-8">
+                        <div>
+                            <h3 class = "text-white">Call Us Today for FREE Consultations</h3>
+                            <p class = "mt-3" style = "color: #ddd">A limited opportunity to own Imperial Residences in the heart of Gurugram</p>
+                        </div>
                     </div>
-                </div>
-                <div class = "d-flex justify-content-center align-items-center col-lg-6">
-                    <button class = "btn btn-success">Call +91 xxxxxxxxx</button>
+                    <div class = "d-flex justify-content-center align-items-center col-lg-4">
+                        <button class = "btn btn-success btn-lg">Call +91-8130635637</button>
+                    </div>
                 </div>
             </div>
         </div>
-      </section>
+    </section>
 
       <section id = "gallery">
         <div class = "container">
             <div class = "text-center">
-                <h1>DLF GARDEN CITY <span>GALLERY</span></h1>
+                <h1 class = "heading">DLF GARDEN CITY <span class = "highlight">GALLERY</span></h1>
+                <hr style= "width: 10%; margin: 20px auto;">
                 <p>Not just builders make good and luxurious floors. Its the Amenities of DLF Garden City Luxury Floors that make it luxurious.</p>
             </div>
 
-            <div>
+            <div class = "my-5">
                 <div class = "row">
-                    <div class = "col-lg-4 mb-2">
+                    <div class = "col-lg-4 mb-4">
                         <div>
                             <img src="http://mediqpharma.com/wp/wp-content/uploads/2022/06/dlf-garden-city-independet-floors.jpg" class = "img-fluid" alt="">
                         </div>
                     </div>
-                    <div class = "col-lg-4 mb-2">
+                    <div class = "col-lg-4 mb-4">
                         <div>
                             <img src="http://mediqpharma.com/wp/wp-content/uploads/2022/06/dlf-garden-city-independet-floors.jpg" class = "img-fluid" alt="">
                         </div>
                     </div>
-                    <div class = "col-lg-4 mb-2">
+                    <div class = "col-lg-4 mb-4">
                         <div>
                             <img src="http://mediqpharma.com/wp/wp-content/uploads/2022/06/dlf-garden-city-independet-floors.jpg" class = "img-fluid" alt="">
                         </div>
                     </div>
-                    <div class = "col-lg-4 mb-2">
+                    <div class = "col-lg-4 mb-4">
                         <div>
                             <img src="http://mediqpharma.com/wp/wp-content/uploads/2022/06/dlf-garden-city-independet-floors.jpg" class = "img-fluid" alt="">
                         </div>
                     </div>
-                    <div class = "col-lg-4 mb-2">
+                    <div class = "col-lg-4 mb-4">
                         <div>
                             <img src="http://mediqpharma.com/wp/wp-content/uploads/2022/06/dlf-garden-city-independet-floors.jpg" class = "img-fluid" alt="">
                         </div>
                     </div>
-                    <div class = "col-lg-4 mb-2">
+                    <div class = "col-lg-4 mb-4">
                         <div>
                             <img src="http://mediqpharma.com/wp/wp-content/uploads/2022/06/dlf-garden-city-independet-floors.jpg" class = "img-fluid" alt="">
                         </div>
@@ -280,6 +347,7 @@
         <div class = "container">
             <div class = "text-center">
                 <h1>DLF GARDEN CITY <span>GALLERY</span></h1>
+                <hr style= "width: 10%; margin: 20px auto;">
                 <p>Not just builders make good and luxurious floors. Its the Amenities of DLF Garden City Luxury Floors that make it luxurious.</p>
             </div>
 
@@ -320,6 +388,7 @@
         <div class = "container">
             <div class = "text-center">
                 <h1>DLF GARDEN CITY<span>FLOOR LAYOUT</span></h1>
+                <hr style= "width: 10%; margin: 20px auto;">
                 <p>Eventually, it’s all about space. Space you can call your own. These independent units are effectively planned to offer you maximum usable area. Each room is planned to insurer brightness and unhindered air flow. Covered car parking at the stilt level entrance with an elevator and staircase lobby equipped with CCTV cameras. Provide a secure and comfortable experience. </p>
             </div>
             <div>
@@ -353,7 +422,7 @@
         </div>
       </section>
 
-      <section id = "stories" class = "bg-light">
+      <section id = "stories" style = "background: #F4F6F4">
         <div class = "container">
             <div class = "text-center mb-5">
                 <h1>Happy Stories</h1>
@@ -362,10 +431,10 @@
                 <div class = "row">
                     <div class = "col-lg-6">
                         <div class = "h-100">
-                            <div class = "text-center d-flex align-items-center justify-content-center bg-light border h-100 px-5">
+                            <div class = "text-center d-flex align-items-center justify-content-center bg-light h-100 px-5">
                                 <div>
                                     <p>We were looking for a home not just a flat. And our search ends here when we consulted with Mr. Manish</p>
-                                    <p>Suvarcha Batra</p>
+                                    <p class = "author">Suvarcha Batra</p>
                                     <div class = "stars">
                                         <i class = "fa fa-star"></i><i class = "fa fa-star"></i><i class = "fa fa-star"></i><i class = "fa fa-star"></i><i class = "fa fa-star"></i>
                                     </div>
@@ -375,10 +444,10 @@
                     </div>
                     <div class = "col-lg-6">
                         <div>
-                            <div class = "px-3 py-3 d-flex align-items-center justify-content-center bg-light border">
+                            <div class = "px-3 py-3 d-flex align-items-center justify-content-center bg-light">
                                 <div>
                                     <p>We were looking for a home not just a flat. And our search ends here when we consulted with Mr. Manish</p>
-                                    <p>Suvarcha Batra</p>
+                                    <p class = "author">Suvarcha Batra</p>
                                     <div class = "stars">
                                         <i class = "fa fa-star"></i><i class = "fa fa-star"></i><i class = "fa fa-star"></i><i class = "fa fa-star"></i><i class = "fa fa-star"></i>
                                     </div>
@@ -386,10 +455,10 @@
                             </div>
                         </div>
                         <div class = "mt-3">
-                            <div class = "px-3 py-3 d-flex align-items-center justify-content-center bg-light border">
+                            <div class = "px-3 py-3 d-flex align-items-center justify-content-center bg-light">
                                 <div>
                                     <p>We were looking for a home not just a flat. And our search ends here when we consulted with Mr. Manish</p>
-                                    <p>Suvarcha Batra</p>
+                                    <p class = "author">Suvarcha Batra</p>
                                     <div class = "stars">
                                         <i class = "fa fa-star"></i><i class = "fa fa-star"></i><i class = "fa fa-star"></i><i class = "fa fa-star"></i><i class = "fa fa-star"></i>
                                     </div>
@@ -403,8 +472,9 @@
       </section>
 
       
-      <section id = "call us" class = "bg-sucess" style = "background: green">
-        <div class = "container">
+      <section id = "call us" style = "padding: 50px 0;">
+        <div class = "container p-5" style = "background: #06752E; border-radius: 30px;">
+            <div class = "container">
                 <div class = "d-flex justify-content-center align-items-center">
                     <div class = "text-center">
                         <h1 class = "text-white">Download Brochure Now</h1>
@@ -412,10 +482,11 @@
                         <button class = "btn btn-success">Download Now</button>
                     </div>
                 </div>
+            </div>
         </div>
       </section>
 
-      <section id = "map">
+      <section id = "map" style = "background: #F4F6F4">
         <div class = "container">
             <div class="google-map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3500.049361117758!2d77.134004!3d28.68817!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x77307368a4a372c6!2sTASK%20AND%20COMPANY!5e0!3m2!1sen!2sin!4v1647030971082!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -423,16 +494,17 @@
         </div>
       </section>
 
-      <section id = "desclaimer">
+      <section id = "desclaimer" style = "background: #F4F6F4">
         <div class = "container">
             <div class = "text-center mb-5">
                 <h1>DLF GARDEN CITY DESCLAIMER</h1>
+                <hr style= "width: 10%; margin: 20px auto;">
                 <p>This website is only for informational purposes and should not be considered/claimed as an official website. This website belongs to the authorized channel partner of DLF Gurugram. While submitting the information you agree and authorized us to contact you and send relevant data or email, SMS, WhatsApp and other communication channel. This will override the registry with DNC/NDNC. Privacy Policy</p>
             </div>
         </div>
       </section>
 
-      <section class = "contact-us">
+      <section class = "contact-us" style = "background: #F4F6F4">
         <div class = "container">
             <div class = "row">
                 <div class = "col-lg-3">
@@ -455,7 +527,7 @@
         </div>
       </section>
 
-      <footer class = "py-3">
+      <footer class = "py-3"style = "#F4F6F4">
         <div class = "container">
             <div class = "row">
                 <div class = "col-lg-3">

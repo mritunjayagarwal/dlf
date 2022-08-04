@@ -1,3 +1,63 @@
+/* navbar */
+
+.navbar button{
+    text-decoration: none;
+    color: #000;
+}
+.navbar button:hover{
+    color: #1BAE70
+}
+
 section{
-    padding: 100px 0;
+    padding: 50px 0;
+}
+
+.contact-main{
+    background: #F4F6F4;
+}
+
+.btn-success{
+    color: #1BAE70;
+}
+
+.heading {
+    color: #1BAE70
+}
+
+.highlight {
+    color: #14261C
+}
+
+p{
+    font-size: 18px;
+}
+
+.contact-form input{
+    padding: 13px 8px;
+    margin: 7px 0;
+    font-size: 18px;
+    border: 0.5px solid #dfdfdf;
+}
+
+/* Amenities Section */
+
+.amenity-item{
+    background: #F4F6F4;
+    padding: 80px 0;
+}
+
+.amenities-text{
+    font-weight: 700
+}
+
+/* Happy Stories */
+
+.author{
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.fa-star{
+    color: goldenrod;
+    font-size: 20px !important;
 }
