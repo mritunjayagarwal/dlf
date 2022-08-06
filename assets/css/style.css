@@ -1,4 +1,8 @@
 /* navbar */
+h1, h2, h3, h4, h5{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600 !important
+}
 
 .navbar button{
     text-decoration: none;
@@ -9,7 +13,11 @@
 }
 
 .heading-hr{
-    border: 0;
+    border: 1px solid #000;
+    width: 20%;
+    opacity: 1;
+    margin: 0 auto;
+    background: #000
 }
 
 .list li {
@@ -21,8 +29,10 @@
 }
 
 .list hr{
-    border: 2px solid green;
+    border: 1px solid #1BAE70;
     width: 40%;
+    opacity: 1;
+    background: #1BAE70
 }
 
 section{
