@@ -3,13 +3,16 @@ h1, h2, h3, h4, h5{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 600 !important
 }
-
-.navbar button{
+a{
+    color: #000
+}
+.navbar a{
     font-size: 18px;;
     text-decoration: none;
     color: #000;
 }
-.navbar button:hover{
+
+a:hover{
     color: #1BAE70
 }
 
@@ -37,7 +40,7 @@ h1, h2, h3, h4, h5{
 }
 
 section{
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 .contact-main{
@@ -148,4 +151,39 @@ p{
     .details {
         text-align: center;
     }
+
+    .heading-paragraph{
+        padding: 0 20px;
+    }
+    
+  }
+@media only screen and (max-width: 991px) {
+    #main {
+        padding: 450px 0 !important;
+    }
+
+    .head-desc{
+        font-size: 15px;
+    }
+
+    .main-br{
+        margin: 20px auto;
+    }
+
+    .branding{
+        font-size: 55px;
+    }
+
+    .price{
+        font-size: 55px;
+    }
+
+    .details {
+        text-align: center;
+    }
+
+    .heading-paragraph{
+        padding: 0 20px;
+    }
+    
   }
