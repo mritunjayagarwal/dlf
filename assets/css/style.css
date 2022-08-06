@@ -5,6 +5,7 @@ h1, h2, h3, h4, h5{
 }
 
 .navbar button{
+    font-size: 20px;;
     text-decoration: none;
     color: #000;
 }
@@ -76,10 +77,14 @@ p{
 .amenity-item{
     background: #F4F6F4;
     padding: 80px 0;
+    height: 100%;
 }
 
 .amenities-text{
-    font-weight: 700
+    margin: 0 20px;
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 600
 }
 
 /* Happy Stories */
