@@ -72,9 +72,9 @@
               <a href = "#reviews" class="btn btn-link">
                 Reviews
               </a>
-              <a id="myBtn" class="btn btn-success py-2 px-5 text-white" style = "margin: 0 15px;font-size: 15px;">
+              <button type="button" class="btn btn-success py-2 px-5 text-white" data-toggle="modal" data-target="#exampleModal" style = "margin: 0 15px;font-size: 15px;">
                 Enquire Now
-              </a>
+              </button>
             </div>
           </div>
           <!-- Collapsible wrapper -->
@@ -107,7 +107,7 @@
                                 <h3 class = "text-center">COMING SOON</h3>
                                 <h5 class = "text-center">3 BHK Floors in DLF Garden City</h5>
                                 <hr style="width:100px; margin: 20px auto;" />
-                                    <form action="">
+                                    <form action="mail.php" method="post">
                                         <div class = "d-flex my-2">
                                             <div style = "flex:1;margin-right: 10px">
                                                 <input type="text" class = "w-100" name="" id="" placeholder = "First Name">
@@ -619,9 +619,34 @@
         </div>
       </section>
 
-      <div id="myModal" class="modal">
-        <div class = "d-flex justify-content-center align-items-center" style = "position: absolute; background: #d3d3d3; top: 0; bottom: 0; right: 0; left: 0;">
-            Hi
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class = "contact-main d-flex pt-3 pb-5" style= "border-radius: 20px;">
+                <div class = "contact-form px-5">
+                    <h3 class = "text-center">COMING SOON</h3>
+                    <h5 class = "text-center">3 BHK Floors in DLF Garden City</h5>
+                    <hr style="width:100px; margin: 20px auto;" />
+                        <form action="mail.php" method="post">
+                            <div class = "d-flex my-2">
+                                <div style = "flex:1;margin-right: 10px">
+                                    <input type="text" class = "w-100" name="fname" id="" placeholder = "First Name">
+                                </div>
+                                <div style = "flex:1">
+                                    <input type="text" class = "w-100" name="lname" id="" placeholder = "Last Name">
+                                </div>
+                            </div>
+                            <div class = "my-2">
+                                <input type="tel" class = "w-100" name="phone" id="" placeholder = "Phone">
+                            </div>
+                            <div class = "my-2">
+                                <input type="email" class = "w-100" name="email" id="" placeholder="Email">
+                            </div>
+                            <div>
+                                <button type="submit" class = "btn btn-success btn-lg">Enquire Now</button>
+                            </div>
+                        </form>
+                   </div>
+               </div>
         </div>
     
     </div>
