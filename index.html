@@ -19,8 +19,8 @@
           <!-- Navbar brand -->
           <a class="navbar-brand me-2" href="#">
             <img
-              src="http://mediqpharma.com/wp/wp-content/uploads/elementor/thumbs/1280px-DLF_logo.svg-2-pqfrxyo3zve6vdi9prcup9fosjdsaftmwufce7metu.png"
-              height="56"
+              src="./assets/img/logo.png"
+              height="50"
               alt="DLF Logo"
               loading="lazy"
               style="margin-top: -1px;"
@@ -28,54 +28,60 @@
           </a>
       
           <!-- Toggle button -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-mdb-toggle="collapse"
-            data-mdb-target="#navbarButtonsExample"
-            aria-controls="navbarButtonsExample"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fa fa-bars"></i>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
       
           <!-- Collapsible wrapper -->
-          <div class="collapse navbar-collapse" id="navbarButtonsExample">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              
+          <div class="collapse navbar-collapse" id="navbarText">
+            <div class = "me-auto"></div>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class = "nav-item">
+                <a href = "#about" class="btn btn-link">
+                    About
+                  </a>
+              </li>
+              <li class = "nav-item">
+                <a href = "#location" class="btn btn-link">
+                    Location
+                  </a>
+              </li>
+              <li class = "nav-item">
+                <a href = "#highlight" class="btn btn-link">
+                    Highlights
+                  </a>
+              </li>
+              <li class = "nav-item">
+                <a href = "#amenities" class="btn btn-link">
+                    Amenities
+                  </a>
+              </li>
+              <li class = "nav-item">
+                <a href = "#gallery" class="btn btn-link">
+                    Gallery
+                  </a>
+              </li>
+              <li class = "nav-item">
+                <a href = "#fplan" class="btn btn-link">
+                    Floor Plan
+                  </a>
+              </li>
+              <li class = "nav-item">
+                <a href = "#flayout" class="btn btn-link">
+                    Layout
+                  </a>
+              </li>
+              <li class = "nav-item">
+                <a href = "#reviews" class="btn btn-link">
+                    Reviews
+                  </a>
+              </li>
+              <li class = "nav-item">
+                <button type="button" class="btn btn-success py-2 px-5 text-white" data-toggle="modal" data-target="#exampleModal" style = "margin: 0 15px;font-size: 15px;">
+                    Enquire Now
+                  </button>
+              </li>
             </ul>
-            <!-- Left links -->
-      
-            <div class="d-flex align-items-center">
-              <a href = "#about" class="btn btn-link">
-                About
-              </a>
-              <a href = "#location" class="btn btn-link">
-                Location
-              </a>
-              <a href = "#highlight" class="btn btn-link">
-                Highlights
-              </a>
-              <a href = "#amenities" class="btn btn-link">
-                Amenities
-              </a>
-              <a href = "#gallery" class="btn btn-link">
-                Gallery
-              </a>
-              <a href = "#fplan" class="btn btn-link">
-                Floor Plan
-              </a>
-              <a href = "#flayout" class="btn btn-link">
-                Layout
-              </a>
-              <a href = "#reviews" class="btn btn-link">
-                Reviews
-              </a>
-              <button type="button" class="btn btn-success py-2 px-5 text-white" data-toggle="modal" data-target="#exampleModal" style = "margin: 0 15px;font-size: 15px;">
-                Enquire Now
-              </button>
-            </div>
           </div>
           <!-- Collapsible wrapper -->
         </div>
@@ -110,17 +116,17 @@
                                     <form action="mail.php" method="post">
                                         <div class = "d-flex my-2">
                                             <div style = "flex:1;margin-right: 10px">
-                                                <input type="text" class = "w-100" name="" id="" placeholder = "First Name">
+                                                <input type="text" class = "w-100" name="fName" id="" placeholder = "First Name" required>
                                             </div>
                                             <div style = "flex:1">
-                                                <input type="text" class = "w-100" name="" id="" placeholder = "Last Name">
+                                                <input type="text" class = "w-100" name="lName" id="" placeholder = "Last Name" required>
                                             </div>
                                         </div>
                                         <div class = "my-2">
-                                            <input type="text" class = "w-100" name="" id="" placeholder = "Phone">
+                                            <input type="tel" class = "w-100" name="phone" id="" placeholder = "Phone" required>
                                         </div>
                                         <div class = "my-2">
-                                            <input type="text" class = "w-100" name="" id="" placeholder="Email">
+                                            <input type="email" class = "w-100" name="email" id="" placeholder="Email" required>
                                         </div>
                                         <div>
                                             <button type="submit" class = "btn btn-success btn-lg">Enquire Now</button>
@@ -629,17 +635,17 @@
                         <form action="mail.php" method="post">
                             <div class = "d-flex my-2">
                                 <div style = "flex:1;margin-right: 10px">
-                                    <input type="text" class = "w-100" name="fname" id="" placeholder = "First Name">
+                                    <input type="text" class = "w-100" name="fName" id="" placeholder = "First Name" required>
                                 </div>
                                 <div style = "flex:1">
-                                    <input type="text" class = "w-100" name="lname" id="" placeholder = "Last Name">
+                                    <input type="text" class = "w-100" name="lLame" id="" placeholder = "Last Name" required>
                                 </div>
                             </div>
                             <div class = "my-2">
-                                <input type="tel" class = "w-100" name="phone" id="" placeholder = "Phone">
+                                <input type="tel" class = "w-100" name="phone" id="" placeholder = "Phone" required>
                             </div>
                             <div class = "my-2">
-                                <input type="email" class = "w-100" name="email" id="" placeholder="Email">
+                                <input type="email" class = "w-100" name="email" id="" placeholder="Email" required>
                             </div>
                             <div>
                                 <button type="submit" class = "btn btn-success btn-lg">Enquire Now</button>
