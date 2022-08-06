@@ -1,8 +1,35 @@
 /* navbar */
+html, body{
+    scroll-behavior: smooth;
+}
+
 h1, h2, h3, h4, h5{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 600 !important
 }
+
+/* .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  } */
+
 a{
     color: #000
 }
@@ -128,10 +155,6 @@ p{
 }
 
 @media only screen and (max-width: 600px) {
-    #main {
-        padding: 450px 0 !important;
-    }
-
     .head-desc{
         font-size: 15px;
     }
@@ -141,11 +164,12 @@ p{
     }
 
     .branding{
-        font-size: 25px;
+        font-size: 25px !important;
+        margin-bottom: 20px;
     }
 
     .price{
-        font-size: 55px;
+        font-size: 45px !important;
     }
 
     .details {
@@ -159,7 +183,7 @@ p{
   }
 @media only screen and (max-width: 991px) {
     #main {
-        padding: 450px 0 !important;
+        padding: 500px 0 !important;
     }
 
     .head-desc{
