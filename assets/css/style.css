@@ -8,6 +8,19 @@
     color: #1BAE70
 }
 
+.heading-hr{
+    border: 0;
+}
+
+.list li {
+    font-size: 18px;
+}
+
+.list hr{
+    border: 2px solid green;
+    width: 40%;
+}
+
 section{
     padding: 50px 0;
 }
