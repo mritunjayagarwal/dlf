@@ -235,5 +235,9 @@ p{
     .heading-paragraph{
         padding: 0 20px;
     }
+
+    .enquire-btn{
+        display: none;
+    }
     
   }
