@@ -16,6 +16,10 @@
     font-size: 18px;
 }
 
+#main{
+    padding: 290px 0; 
+}
+
 .list hr{
     border: 2px solid green;
     width: 40%;
@@ -35,6 +39,11 @@ section{
 
 .heading {
     color: #1BAE70
+}
+
+.heading-paragraph{
+    padding: 0 20%;
+    text-align: center
 }
 
 .highlight {
@@ -74,3 +83,54 @@ p{
     color: goldenrod;
     font-size: 20px !important;
 }
+
+.proper-hover:hover{
+    background: #000;
+    opacity: 0.5;
+}
+
+.branding{
+    font-size: 70px;
+}
+
+.price{
+    font-size: 70px; font-weight: 700
+}
+
+.main-br{
+    width:20%;
+}
+
+.hr1{
+    margin: 40px 0;
+}
+
+.hr2{
+    margin: 20px 0;
+}
+
+@media only screen and (max-width: 600px) {
+    #main {
+        padding: 450px 0 !important;
+    }
+
+    .head-desc{
+        font-size: 15px;
+    }
+
+    .main-br{
+        margin: 20px auto;
+    }
+
+    .branding{
+        font-size: 25px;
+    }
+
+    .price{
+        font-size: 55px;
+    }
+
+    .details {
+        text-align: center;
+    }
+  }
