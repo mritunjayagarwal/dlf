@@ -48,6 +48,14 @@ a{
     color: #000;
 }
 
+.side-img{
+    position: absolute;right: 5%;top: 30%
+}
+
+.side-img1{
+    width: 40% !important; position: absolute;right: 5%;top: 30%
+}
+
 a:hover{
     color: #1BAE70 !important
 }
@@ -115,7 +123,7 @@ p{
 
 .amenity-item{
     background: #F4F6F4;
-    padding: 80px 0;
+    padding: 40px 0;
     height: 100%;
 }
 
@@ -131,6 +139,10 @@ p{
 .author{
     font-weight: 600;
     font-size: 22px;
+}
+
+.story-item{
+    border-radius: 20px;
 }
 
 .fa-star{
@@ -164,6 +176,10 @@ p{
     margin: 20px 0;
 }
 
+.call-main{
+    padding: 60px 0
+}
+
 @media only screen and (max-width: 600px) {
     .head-desc{
         font-size: 15px;
@@ -171,6 +187,10 @@ p{
 
     .amenity-item{
         padding: 40px 0;
+    }
+
+    .call-top{
+        text-align: center;
     }
 
     .amenities-text{
@@ -215,10 +235,40 @@ p{
         text-align: center
     }
 
+    .side-img, .side-img1{
+        position: absolute;right: 5%;top: 35% !important
+    }
+
   }
 @media only screen and (max-width: 991px) {
+
+    .container{
+        min-width: 97% !important;
+        margin: 0 auto;
+    }
+
+    .call-head{
+        font-size: 25px;
+    }
+
+    .call-main{
+        padding: 40px 0;
+    }
+
     #main {
         padding: 470px 0 !important;
+    }
+
+    .amenity-item{
+        padding: 20px 0;
+    }
+
+    .amenities-text{
+        font-size: 15px;
+    }
+
+    .amenity-item img{
+        width: 70px !important
     }
 
     .action-display{
@@ -251,6 +301,10 @@ p{
 
     .enquire-btn{
         display: none;
+    }
+
+    .side-img, .side-img1{
+        position: absolute;right: 5%;top: 15%
     }
     
   }
