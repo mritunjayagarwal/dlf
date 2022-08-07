@@ -80,6 +80,7 @@ a:hover{
     border: 1px solid #1BAE70;
     width: 40%;
     opacity: 1;
+    margin: 10px 0;
     background: #1BAE70
 }
 
@@ -303,8 +304,11 @@ p{
         display: none;
     }
 
-    .side-img, .side-img1{
-        position: absolute;right: 5%;top: 15%
+    .side-img{
+        position: absolute;right: 5%;top: 20%
+    }
+    .side-img1{
+        position: absolute;right: 10%;top: 18%
     }
     
   }
