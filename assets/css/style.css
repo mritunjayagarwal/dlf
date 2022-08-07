@@ -8,6 +8,11 @@ h1, h2, h3, h4, h5{
     font-weight: 600 !important;
 }
 
+.container{
+    min-width: 93% !important;
+    margin: 0 auto;
+}
+
 /* .container {
     padding-right: 15px;
     padding-left: 15px;
