@@ -212,6 +212,10 @@ p{
         padding: 470px 0 !important;
     }
 
+    .action-display{
+        display: block;
+    }
+
     .head-desc{
         font-size: 15px;
     }
@@ -241,3 +245,4 @@ p{
     }
     
   }
+
