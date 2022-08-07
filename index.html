@@ -92,7 +92,7 @@
                   </a>
               </li>
               <li class = "nav-item enquire-btn">
-                <button type="button" class="btn btn-success py-2 px-5 text-white" data-toggle="modal" data-target="#exampleModal" style = "margin: 0 15px;font-size: 15px;">
+                <button type="button" class="btn btn-success py-2 px-5 text-white" data-toggle="modal" data-target="#exampleModal" style = "font-size: 15px;">
                     Enquire Now
                   </button>
               </li>
@@ -396,7 +396,7 @@
             <div class = "text-center">
                 <h1 class = "heading">DLF GARDEN CITY <span class = "highlight">GALLERY</span></h1>
                 <hr class = "heading-hr" style= "width: 10%; margin: 20px auto;">
-                <div class = "heading-paragraph"><p>Not just builders make good and luxurious floors. Its the Amenities of DLF Garden City Luxury Floors that make it luxurious.</p></div>
+                <div class = "heading-paragraph"><p>Don’t just believe us. Look at the DLF Garden City Luxury Floors yourselves and contact us to know more.</p></div>
             </div>
 
             <div class = "my-5">
@@ -453,7 +453,8 @@
             <div class = "text-center">
                 <h1 class = "heading">DLF GARDEN CITY <span class = "highlight">FLOOR PLAN</span></h1>
                 <hr class = "heading-hr" style= "width: 10%; margin: 20px auto;">
-                <div class = "heading-paragraph"><p>Not just builders make good and luxurious floors. Its the Amenities of DLF Garden City Luxury Floors that make it luxurious.</p></div>
+                <h3 style="font-weight:700;"> 3 BHK LUXURY  FLOORS with Servant Room </h3>
+                <!-- <div class = "heading-paragraph"><p>Not just builders make good and luxurious floors. Its the Amenities of DLF Garden City Luxury Floors that make it luxurious.</p></div> -->
             </div>
 
             <div>
@@ -617,7 +618,7 @@
       <section id = "desclaimer" style = "background: #F4F6F4;margin-bottom: -50px;">
         <div class = "container">
             <div class = "text-center mb-5">
-                <h1 class = "heading">DLF GARDEN CITY <span class = "highlight">HIGHLIGHT</span></h1>
+                <h1 class = "heading">DLF GARDEN CITY <span class = "highlight">Disclaimer</span></h1>
                 <hr class = "heading-hr" style= "width: 10%; margin: 20px auto;">
                 <div class = "heading-paragraph">
                     <p>This website is only for informational purposes and should not be considered/claimed as an official website. This website belongs to the authorized channel partner of DLF Gurugram. While submitting the information you agree and authorized us to contact you and send relevant data or email, SMS, WhatsApp and other communication channel. This will override the registry with DNC/NDNC. Privacy Policy</p>
@@ -659,32 +660,34 @@
 
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-            <div class = "contact-main d-flex pt-3 pb-5" style= "border-radius: 20px;">
-                <div class = "contact-form px-5">
-                    <h3 class = "text-center">COMING SOON</h3>
-                    <h5 class = "text-center">3 BHK Floors in DLF Garden City</h5>
-                    <hr style="width:100px; margin: 20px auto;" />
-                        <form action="mail.php" method="post">
-                            <div class = "d-flex my-2">
-                                <div style = "flex:1;margin-right: 10px">
-                                    <input type="text" class = "w-100" name="fName" id="" placeholder = "First Name" required>
+            <div class = "modal-content">
+                <div class = "contact-main d-flex pt-3 pb-5" style= "border-radius: 20px;">
+                    <div class = "contact-form px-5">
+                        <h3 class = "text-center">COMING SOON</h3>
+                        <h5 class = "text-center">3 BHK Floors in DLF Garden City</h5>
+                        <hr style="width:100px; margin: 20px auto;" />
+                            <form action="mail.php" method="post">
+                                <div class = "d-flex my-2">
+                                    <div style = "flex:1;margin-right: 10px">
+                                        <input type="text" class = "w-100" name="fName" id="" placeholder = "First Name" required>
+                                    </div>
+                                    <div style = "flex:1">
+                                        <input type="text" class = "w-100" name="lLame" id="" placeholder = "Last Name" required>
+                                    </div>
                                 </div>
-                                <div style = "flex:1">
-                                    <input type="text" class = "w-100" name="lLame" id="" placeholder = "Last Name" required>
+                                <div class = "my-2">
+                                    <input type="tel" class = "w-100" name="phone" id="" placeholder = "Phone" required>
                                 </div>
-                            </div>
-                            <div class = "my-2">
-                                <input type="tel" class = "w-100" name="phone" id="" placeholder = "Phone" required>
-                            </div>
-                            <div class = "my-2">
-                                <input type="email" class = "w-100" name="email" id="" placeholder="Email" required>
-                            </div>
-                            <div>
-                                <button type="submit" class = "btn btn-success btn-lg">Enquire Now</button>
-                            </div>
-                        </form>
+                                <div class = "my-2">
+                                    <input type="email" class = "w-100" name="email" id="" placeholder="Email" required>
+                                </div>
+                                <div>
+                                    <button type="submit" class = "btn btn-success btn-lg">Enquire Now</button>
+                                </div>
+                            </form>
+                       </div>
                    </div>
-               </div>
+            </div>
         </div>
     
     </div>
@@ -715,11 +718,10 @@ const glightbox = GLightbox({
     selector: '.glightbox'
   });
 
-    $(document).ready(function(){
-        setTimeout(function(){
-            $('.f199').click()
-        }, '1000')
-    })
+    $('.f199').click()
+    setTimeout(function(){
+        $('.f199').click()
+    }, '500')
 
     $('.f199').click(function(){
         $('.s463').css({"background-color":"#eee", "color": "#000"})
@@ -767,6 +769,10 @@ const glightbox = GLightbox({
             $('.detail').css({'display': 'hidden'})
         })
     }
+
+    $('#exampleModal').on('shown.bs.modal', function() {
+        $(document).off('focusin.modal');
+    });
 </script>
 </body>
 </html>
